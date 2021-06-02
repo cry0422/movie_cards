@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movies</title>
+    <link href="style.css" rel="stylesheet">
+    <script type="text/javascript" src="movie.js" ></script>
+</head>
+<body>
+    <!--header-->
+    <header class="header">
+        <div class="title">
+            <h1>CSE411 MOVIE PLAYER</h1>
+        </div>
+        <div class="nav">
+            <nav class="nav_bar">
+                <ul>
+                    <li><a href="movie player.html">Movies</a></li>
+                    <li><a href="card game.html">Games</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!--movie-->
+    <div class="movie">
+        <div class="movie_player">
+            <h3 id="movieName">movie name</h3>
+            <video id="movie" height="500" onclick="playMovie()">
+                <source type="video/mp4">
+            </video>
+            <div id="progress">
+                <div id="bar"></div>
+            </div>
+            <div class="controls">
+                <div class="leftButton">
+                    <input id="play" type="button" name="play" onclick="playMovie()">
+                    <input id="nextButton" type="button" name="next" onclick="nextMovie()">
+                    <div class="timer">
+                        <span id="progress_timer">00:00:00</span>/
+                        <span id="duration_timer">00:00:00</span>
+                    </div>
+                </div>
+                <div class="rightButton">
+    <!--                <input id="volume_up" type="button" name="volume up"onclick="volumeUp()">-->
+    <!--                <input id="volume_down" type="button" name="volume down"onclick="volumeDown()">-->
+                    <div class="volume_control">
+                        <input id="volume" type="range" min="0" max="1" value="0.5" step="0.1">
+                    </div>
+                    <input id="muted" type="button" name="mute" onclick="muteMovie()">
+                    <input id="playAll" type="button" name="playAll" onclick="playAll()">
+                    <input id="fullScreen" type="button" name="fullScreen" onclick="fullScreen()">
+                </div>
+            </div>
+        </div>
+
+        <div class="movie_lists">
+            <h3>Movie Lists</h3>
+            <p id="buttonName">Previous&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNext</p>
+            <div class="buttons">
+                <div class="previous_part" onclick="previousMovie()">
+                    <img id="previous">
+                    <img class="previousBtn" src="materials/previous.png">
+                </div>
+                <div class="next_part" onclick="nextMovie()">
+                    <img class="nextBtn" src="materials/next.png">
+                    <img id="next">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--footer-starts-->
+    <footer class="footer">
+        <div class="footer-top">
+            <a href="#"><h1>Movie Player</h1></a>
+            <a href="#"><p>contact us: 86-1377xxxxxxx</p></a>
+            <p>Copyright &copy; 2021.XJTLU.APPLIED INFORMATICS.</p>
+        </div>
+    </footer>
+</body>
+</html>

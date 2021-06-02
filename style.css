@@ -1,0 +1,364 @@
+/*header*/
+.header{
+    background-color: #1F272A;
+    background-position: bottom;
+}
+.title{
+    padding: 15px;
+}
+.title h1{
+    color: #03CF74;
+    text-align: center;
+    font-family: "Brush Script MT";
+    font-size: xxx-large;
+}
+.nav_bar{
+    padding-bottom: 15px;
+}
+.nav_bar ul{
+    list-style: none;
+    background-color: #1F272A;
+    text-align: center;
+}
+.nav_bar ul li{
+    display: inline;
+    margin: 80px;
+    line-height: 50px;
+    border: 5px solid #03CF74;
+    border-radius: 25px;
+    background-color: #03CF74;
+    font-size: xx-large;
+}
+.nav_bar ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+/*movie player*/
+.movie_player{
+    background-color: black;
+    margin-top: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-bottom: 15px;
+    text-align: center;
+    border: 5px solid #1F272A;
+}
+#movieName{
+    /*background-color: black;*/
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: #FFFFFF;
+}
+.movie_player video{
+    width: 100%;
+    height: 500px;
+}
+.controls{
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+}
+/*.movie_button {*/
+/*    border: solid;*/
+/*    display: inline-flex;*/
+/*    width: 96%;*/
+/*}*/
+#progress{
+    border: darkgray solid 1px;
+    width:100%;
+    border-radius: 8px;
+    background-color: darkgray;
+    height: 10px;
+}
+#bar{
+    background-color: darkorange;
+    height: 10px;
+    width: 0;
+    border-radius: 8px;
+}
+.leftButton{
+    float: left;
+    display: inline-flex;
+    /*background-color: white;*/
+}
+#play{
+    margin-left: 15px;
+    width: 40px;
+    height: 40px;
+    background: url("materials/play.png");
+    background-size: cover;
+    border: 0;
+    outline: none;
+}
+.timer{
+    margin-left: 15px;
+    font-size: x-large;
+    width: 240px;
+    margin-top: 5px;
+    color: #FFFFFF;
+}
+#nextButton{
+    margin-top: 2px;
+    margin-left: 15px;
+    width: 35px;
+    height: 35px;
+    background: url("materials/next.png");
+    background-size: cover;
+    border: 0;
+    outline: none;
+}
+#progress_timer{
+    color: darkorange;
+}
+.rightButton{
+    float: right;
+    /*background-color: #FFFFFF;*/
+}
+.volume_control{
+    display: inline-flex;
+    position: relative;
+    z-index: 10;
+    background-color: #1F272A;
+    transform: rotateZ(-90deg);
+    height: 30px;
+    border-radius: 8px;
+    left: 110px;
+    bottom: 110px;
+    visibility: hidden;
+}
+#volume{
+    /*transform: rotateZ(-90deg);*/
+    margin: 7px;
+}
+#volume_up{
+    /*float: right;*/
+    /*margin-left: 280px;*/
+    width: 40px;
+    height: 40px;
+    background: url("materials/volume+.png");
+    background-size: cover;
+    border: 0;
+    outline: none;
+}
+#volume_down{
+    margin-left: 15px;
+    width: 40px;
+    height: 40px;
+    background: url("materials/volume-.png");
+    background-size: cover;
+    border: 0;
+    outline: none;
+}
+#muted{
+    margin-left: 15px;
+    width: 40px;
+    height: 40px;
+    background: url("materials/non-muted.png");
+    background-size: cover;
+    border: 0;
+    outline: none;
+}
+#fullScreen{
+    margin-left: 15px;
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    background: url("materials/fullScreen.png");
+    background-size: cover;
+    border: 0;
+    outline: none;
+}
+#playAll{
+    margin-left: 15px;
+    width: 47px;
+    height: 40px;
+    background: url("materials/playCycle.png");
+    background-size: cover;
+    border: 0;
+    outline: none;
+}
+.movie_lists{
+    display: inline;
+}
+.movie_lists h3{
+    background-color: #1F272A;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: xx-large;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-bottom: 0;
+    width: 30%;
+    border-radius: 8px;
+}
+#buttonName{
+    background-color: #1F272A;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: xx-large;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 0;
+    width: 50%;
+    border-radius: 8px;
+}
+.buttons{
+    display: inline-flex;
+    margin-left: 25%;
+    margin-top: 0;
+    margin-bottom: 10px;
+    border: 1px #1F272A solid;
+    background-color: #1F272A;
+    width: 50%;
+    border-radius: 8px;
+}
+.previous_part{
+    border: #FFFFFF solid 1px;
+    width: 20%;
+    height: 150px;
+    margin: 5% 20%;
+    border-radius: 8px;
+    display: inline-flex;
+}
+
+#previous{
+    width: 65%;
+    height: 100%;
+}
+
+.previousBtn{
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+}
+.next_part{
+    border: #FFFFFF solid 1px;
+    width: 20%;
+    height: 150px;
+    margin: 5%;
+    border-radius: 8px;
+    display: inline-flex;
+}
+.nextBtn{
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+}
+#next{
+    width: 65%;
+    height: 100%;
+}
+/*card game*/
+.results{
+    border: #03CF74 2px solid;
+    margin-left: 25%;
+    margin-top: 2%;
+    margin-bottom: 1.5%;
+    text-align: center;
+    position: center;
+    width: 50%;
+    background-color: #03CF74;
+    border-radius: 8px;
+}
+.results h2{
+    font-size: x-large;
+    margin: 10px;
+    color: black;
+}
+.game_button{
+    border: white;
+    text-align: center;
+}
+.game_button input{
+    background-color: blanchedalmond; /* Green */
+    border: 2px solid #03CF74;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 50px;
+    cursor: pointer;
+    border-radius: 4px;
+    outline: none;
+}
+
+.game_button input:hover{
+    background-color: #fadcae;
+    color: white;
+}
+.game_button input:active{
+    border-color: #03CF74;
+    transform: translateY(2px);
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.container {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    perspective: 800px;
+    margin: 15px 100px 20px 100px;
+}
+.card {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    transform-origin: right center;
+
+}
+.card:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.card img{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border: #1F272A solid 3px;
+}
+.card .front {
+    /*background: red;*/
+}
+.card .back {
+    /*background: blue;*/
+    transform: rotateY( 180deg );
+}
+
+.card.flipped {
+    transform: translateX(-100%) rotateY( -180deg );
+}
+
+/*--footer-starts--*/
+.footer{
+    height: 200px;
+    background:#1F272A bottom;
+    text-align: center;
+}
+.footer-top p{
+    font-size:15px;
+    color: #FFFFFF;
+    font-family: "Times New Roman", Times, serif;
+}
+.footer-top a{
+    text-decoration: none;
+}
+.footer-top a h1{
+    margin-top: 2%;
+    padding-top: 20px;
+    color:#03CF74;
+}
+.footer-top a p{
+    font-size: 18px;
+    padding: 10px;
+    font-family: "Times New Roman", Times, serif;
+}
